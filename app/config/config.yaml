@@ -1,0 +1,27 @@
+# config.yaml
+app:
+  name: "Flask Security API"
+
+env:
+  secret_key: "project"
+  debug: true
+
+database:
+  url: "sqlite:///app.db"
+
+security:
+  password_salt: "project"
+  registerable: false
+  send_register_email: false
+  username_enable: true
+  username_required: true
+
+admin:
+  email: "admin@example.com"
+  username: "admin"
+  password: "admin123"
+
+super_admin:
+  email: "superadmin@example.com"
+  username: "superadmin"
+  password: "superadmin123"
